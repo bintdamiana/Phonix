@@ -59,9 +59,11 @@ Restart your terminal to apply the changes.
 Run the Application:
 bash
 python app.py
+
 Use code with caution.
 
 📦 Project Structure
+
 phonix/
 ├── .gitignore
 ├── app.py                      # Core application logic and Gradio interface
