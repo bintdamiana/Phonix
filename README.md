@@ -12,6 +12,7 @@ This project is currently a solo endeavor, built out of a passion for open and a
 To evolve Phonix, I'm looking to collaborate with other developers and visionaries. Whether your expertise is in NLP, AI, open source tech, or education, your contribution could help shape the future of this project. If our mission resonates with you, please reach out!
 
 ✨ What Phonix offers:
+
 Deeper Linguistic Insights: Phonix provides a fine grained phonetic breakdown, grounded in our IPA mapped knowledge base, to explain how and why specific sounds are produced.
 Accessible Self Practice: A browser-based interface allows you to practice pronunciation and receive instant, detailed feedback, effectively serving as a personalized, AI powered phonetic coach.
 Educational Utility: This tool can be used in classrooms for demonstrative phonetics or by students for independent, targeted practice.
