@@ -72,6 +72,7 @@ phonix/
 └── ...
 
 🔸 Future Enhancements 🔸
+
 The Phonix project is a platform for ongoing development and enhancement:
 
 Multilingual Expansion: Extend the knowledge base and pipeline to support phonemes from a broader range of languages.
