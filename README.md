@@ -22,12 +22,17 @@ The Phonetic Pipeline
 
 The processing pipeline includes the following:
 
-🔸Speech-to-Text (Faster-Whisper): Audio input is transcribed into text using the Faster-Whisper model. This is the first step in converting spoken language into a machine-readable format.
-🔸Grapheme-to-Phoneme (Eng-to-IPA): The transcribed text is then passed to a custom Eng-to-IPA service. This component generates a phonetic transcription (an IPA string) from the orthographic input, creating a detailed "sound map" of the word.
-🔸Knowledge Retrieval and Generation (LLM + RAG):
-🔸Retrieval: The IPA transcription serves as the key for the RAG system. The program queries the curated phonix_data.json knowledge base to retrieve specific, expert-authored information about the constituent phonemes.
-🔸Generation: A local Large Language Model (phi3:mini via Ollama) processes the retrieved information and the initial request. It synthesizes a clear, educational explanation.
-🔸Text-to-Speech (Rime TTS API): The final explanation is converted into high-fidelity audio using the Rime TTS API. This completes the feedback loop by speaking the phonetic breakdown back to the user.
+Speech-to-Text (Faster-Whisper): Audio input is transcribed into text using the Faster-Whisper model. This is the first step in converting spoken language into a machine-readable format.
+
+Grapheme-to-Phoneme (Eng-to-IPA): The transcribed text is then passed to a custom Eng-to-IPA service. This component generates a phonetic transcription (an IPA string) from the orthographic input, creating a detailed "sound map" of the word.
+
+Knowledge Retrieval and Generation (LLM + RAG):
+
+Retrieval: The IPA transcription serves as the key for the RAG system. The program queries the curated phonix_data.json knowledge base to retrieve specific, expert-authored information about the constituent phonemes.
+
+Generation: A local Large Language Model (phi3:mini via Ollama) processes the retrieved information and the initial request. It synthesizes a clear, educational explanation.
+
+Text-to-Speech (Rime TTS API): The final explanation is converted into high-fidelity audio using the Rime TTS API. This completes the feedback loop by speaking the phonetic breakdown back to the user.
 
 🖥️ Demo & Local Deployment
 Try the Live Demo
@@ -83,11 +88,15 @@ phonix/
 
 The Phonix project is a platform for ongoing development and enhancement:
 
-🔸Multilingual Expansion: Extend the knowledge base and pipeline to support phonemes from a broader range of languages.
-🔸Advanced Phonetic Analysis (MFA): Integrate the Montreal Forced Aligner (MFA) for more robust and precise phoneme-level timing and segmentation.
-🔸Vector Database Integration (e.g., ChromaDB): A vector database like ChromaDB would be a significant upgrade. This would enable faster and more efficient retrieval of phonetic information, especially as the knowledge base grows to include more languages and detailed data.
-🔸Offline TTS Integration: Investigate a local, self hosted TTS solution to reduce reliance on external APIs and enable offline usage.
-🔸Enhanced Knowledge Base: Continually grow and refine the phonetic knowledge base (phonix_data.json) with richer content and more nuanced explanations.
+Multilingual Expansion: Extend the knowledge base and pipeline to support phonemes from a broader range of languages.
+
+Advanced Phonetic Analysis (MFA): Integrate the Montreal Forced Aligner (MFA) for more robust and precise phoneme-level timing and segmentation.
+
+Vector Database Integration (e.g., ChromaDB): A vector database like ChromaDB would be a significant upgrade. This would enable faster and more efficient retrieval of phonetic information, especially as the knowledge base grows to include more languages and detailed data.
+
+Offline TTS Integration: Investigate a local, self hosted TTS solution to reduce reliance on external APIs and enable offline usage.
+
+Enhanced Knowledge Base: Continually grow and refine the phonetic knowledge base (phonix_data.json) with richer content and more nuanced explanations.
 
 🤝 Contributions Welcome
 This is an open source project, and contributions are welcome. Please feel free to open an issue or submit a pull request.
