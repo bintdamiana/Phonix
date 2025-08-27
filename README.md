@@ -1,12 +1,14 @@
 # Phonix 🔥
 Phonix: a free, AI powered tool for learning phonetics and the International Phonetic Alphabet.
 
-👋 Welcome to Phonix!
+🔸Welcome to Phonix!🔸
+
 Phonix is an open access educational tool that uses AI to deliver detailed phonetic analysis, making the intricacies of spoken language accessible to everyone.  Think of it as a helpful assistant, guided by Phonix the Phoenix 🔥, that turns audio input into pedagogical phonetic explanations.
 
 This project is currently a solo endeavor, built out of a passion for open and accessible education. I've launched the initial version with a core mission: to provide high quality phonetic resources that are free, forever.
 
 🤝 Let's Build This Together 🤝 
+
 To evolve Phonix, I'm looking to collaborate with other developers and visionaries. Whether your expertise is in NLP, AI, open source tech, or education, your contribution could help shape the future of this project. If our mission resonates with you, please reach out!
 
 ✨ What Phonix offers:
@@ -14,7 +16,8 @@ Deeper Linguistic Insights: Phonix provides a fine grained phonetic breakdown, g
 Accessible Self Practice: A browser-based interface allows you to practice pronunciation and receive instant, detailed feedback, effectively serving as a personalized, AI powered phonetic coach.
 Educational Utility: This tool can be used in classrooms for demonstrative phonetics or by students for independent, targeted practice.
 Transparent AI and RAG: Phonix serves as a pedagogical example of a Retrieval Augmented Generation (RAG) system. By coupling a trusted, curated knowledge base (phonix_data.json) with a local LLM, it illustrates how AI can be grounded in facts rather than hallucinating responses.
-🧠 The Phonetic Pipeline
+
+The Phonetic Pipeline
 The processing pipeline includes the following:
 Speech-to-Text (Faster-Whisper): Audio input is transcribed into text using the Faster-Whisper model. This is the first step in converting spoken language into a machine-readable format.
 Grapheme-to-Phoneme (Eng-to-IPA): The transcribed text is then passed to a custom Eng-to-IPA service. This component generates a phonetic transcription (an IPA string) from the orthographic input, creating a detailed "sound map" of the word.
